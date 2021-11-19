@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="thiefstyle.css">
-    <title>dht11 sensor</title>
+    <title>thief cam</title>
 </head>
-<div style="text-align: center;">
-        <img src = "./static/thiefcam-logo.png" width="250" height="100"alt = logo>
+<div class="logoimage">
+    <button type="button" value="logo">
+    <img src = "./static/thief.png"  width="250" height="100">
+</button>
 </div>
-
-<div>
-    <button id = "more" type = "submit" value="submit" style="width:60px;height:30px;float: right;">
-        더보기
-    </button>
-</div>
-<div style="text-align: left; float:left;margin-right:20px;">
-    <img src = "./static/gonghang.png" width="210" height="170">
-</div>
-<div style="text-align: left; float:left;">
-
-    <img src = "./static/blackson.png" width="210" height="170">
-</div>
-<div class="footer height=70">
-    <div class="footer_contents">
-        <button id="delete" type="submit" value="submit" style="width:60px;height:30px;" >삭제</button>
+<div class="set">
+    <div class="seemore">
+        <img src="./static/seemore.png" width="90" height="60">
     </div>
+    <div class ="more">
+        <button type = "submit" value="submit">
+            더보기
+        </button>
+    </div>
+    <div class="image">
+        <img src="./static/blackson.png" width="210" height="170">
+   </div>
+    </div>
+   
 </div>
-    <script src="{{url_for('static', filename='index.js')}}"></script>
-
+<div class="thiefs">
+    <img src="./static/thiefs.png">
+</div>
+<script src="{{url_for('static', filename='index.js')}}"></script>
 </html>
